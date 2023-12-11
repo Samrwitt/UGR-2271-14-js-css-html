@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <title>Your Website</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+</head>
 
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../images/logo.jpg" alt="My Logo" />
-        </a>
-      </div>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="/css/index.html">
+                <img src="/src/images/logo.jpg" alt="My Logo" />
+            </a>
+        </div>
+        <div class="navbar__links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Services.html">Services</a>
+            <a href="Contacts.html">Contact</a>
+        </div>
     </nav>
-    <br />
 
-    <main id="about">
-      <h1>About Me</h1>
-      <div id="AboutParagraph">
-        <div>
-          <p>
-            Hi there! I'm Samrawit, a software engineering student currently
-            immersed in the fascinating world of coding and problem-solving. As
-            I delve deeper into this ever-evolving field, I'm captivated by the
-            endless possibilities it holds for creating innovative solutions
-            that shape our digital landscape.
-          </p>
-          <ul>
-            <li>logo designing</li>
-            <li>illustration</li>
-            <li>Website designing</li>
-            <li>app development</li>
-            <li>bot development</li>
-            <li>algorithm writing</li>
-          </ul>
+    <main class="about" >
+        <h1 class="about__title">About Me</h1>
+        <div class="about__content">
+            <div class="about__image" id="AboutImg">
+                <img src="/src/images/AvatarMaker.png" alt="Description of the image" />
+            </div>
+            <div class="about__paragraph" id="AboutParagraph">
+                <p>
+                    Hi there! I'm Samrawit, a software engineering student currently
+                    immersed in the fascinating world of coding and problem-solving. As
+                    I delve deeper into this ever-evolving field, I'm captivated by the
+                    endless possibilities it holds for creating innovative solutions
+                    that shape our digital landscape.
+                </p>
+                <ul class="about__list" type="disk">
+                    <li>Logo designing</li>
+                    <li>Illustration</li>
+                    <li>Website designing</li>
+                    <li>App and bot development</li>
+                    <li>Algorithm writing</li>
+                </ul>
+            </div>
         </div>
-        <div id="AboutImg">
-          <img src="../images/avatarmaker.png" alt="Description of the image" />
+        <h1 class="about__certificates-title">Certificates</h1>
+        <div class="about__card-container card-container">
+            <div class="about__card card">
+                <img src="/src/images/certimage1.jpg" alt="Image" class="card__image" />
+                <h2 class="card__title">Red hat Administration</h2>
+                <p class="card__description">
+                    Certificate of recognition from Red hat on system administration.
+                </p>
+                <a href="/src/images/cert1.jpg" class="card__link">See certificate</a>
+            </div>
+            <div class="about__card card">
+                <img src="/src/images/certimage2.jpg" alt="Image" class="card__image" />
+                <h2 class="card__title">Networking</h2>
+                <p class="card__description">
+                    Certificate of recognition from Cisco academy on networking essentials.
+                </p>
+                <a href="/src/images/cert2.jpg" class="card__link">See certificate</a>
+            </div>
+            <div class="about__card card">
+                <img src="/src/images/certimage3.png" alt="Image" class="card__image" />
+                <h2 class="card__title">Time management</h2>
+                <p class="card__description">
+                    Certificate of recognition from Udemy on mastering time management.
+                </p>
+            </div>
         </div>
-      </div>
-      <h2>Certificates</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="../images/certimage1.jpg" alt="Image" class="card-image" />
-          <h2>Red hat Administration</h2>
-          <p>
-            certificate of recognition from Red hat on sytem admintstration.
-          </p>
-          <a href="../images/cert1.jpg"> see certificate </a>
+        <div class="about__navigation navigation">
+            <button class="navigation__button" onclick="prevCard()">Previous</button>
+            <button class="navigation__button" onclick="nextCard()">Next</button>
         </div>
-        <div class="card">
-          <img src="../images/certimage2.jpg" alt="Image" class="card-image" />
-          <h2>Networking</h2>
-          <p>
-            Certificate of recognition from cisco academy on networking
-            essential.
-          </p>
-          <a href="../images/cert2.jpg"> see certificate </a>
-        </div>
-        <div class="card">
-          <img src="../images/certimage3.png" alt="Image" class="card-image" />
-          <h2>Time managment</h2>
-          <p>
-            Certificate of recognition from udemy on mastering time managment.
-          </p>
-        </div>
-      </div>
-
-      <div class="navigation">
-        <button onclick="prevCard()">Previous</button>
-        <button onclick="nextCard()">Next</button>
-      </div>
     </main>
-    <hr />
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </div>
-      <p>Made by Samrwit.K</p>
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer__social-icons">
+                <a href="https://www.github.com/samrwitt" target="_blank"
+                    ><img src="/src/images/github.jpg" alt="GitHub"
+                /></a>
+                <a href="https://t.me/Fumble_wit" target="_blank"
+                    ><img src="/src/images/telegram.png" alt="Telegram"
+                /></a>
+                <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank"
+                    ><img src="/src/images/linkedin.png" alt="LinkedIn"
+                /></a>
+                <a href="mailto:samrawitkta@gmail.com" target="_blank"
+                    ><img src="/src/images/Gmail_icon.png" alt="Gmail"
+                /></a>
+            </div>
+            <p class="footer__copyright">&copy; 2023 Your Website. All rights reserved.</p>
+            <p class="footer__made-by">Made by Samrwit.K</p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../images/logo.jpg" alt="My Logo" />
-        </a>
-      </div>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacts</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="/css/index.html">
+                <img src="/src/images/logo.jpg" alt="My Logo" />
+            </a>
+        </div>
+        <div class="navbar__links">
+            <a href="/src/index.html">Home</a>
+            <a href="/src/About.html">About</a>
+            <a href="/src/Projects.html">Projects</a>
+            <a href="/src/Services.html">Services</a>
+            <a href="/src/Contact.html">Contact</a>
+        </div>
     </nav>
-    <br />
+
     <h1>Contact Me</h1>
 
-    <div class="social-icons">
-      <aside>
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </aside>
+    <div class="contact__social-icons">
+        <aside class="social-icons">
+            <a href="https://www.github.com/samrwitt" target="_blank"
+                ><img src="/src/images/github.jpg" alt="GitHub"
+            /></a>
+            <a href="https://t.me/Fumble_wit" target="_blank"
+                ><img src="/src/images/telegram.png" alt="Telegram"
+            /></a>
+            <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank"
+                ><img src="/src/images/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href="mailto:samrawitkta@gmail.com" target="_blank"
+                ><img src="/src/images/Gmail_icon.png" alt="Gmail"
+            /></a>
+        </aside>
     </div>
     <br />
     <p>Please fill out the following form to contact me.</p>
-    <form>
-      <fieldset>
+    <form id="contact_form" class="contact__form">
+
         <legend>Contact Information</legend>
         <label for="name">Name:</label>
 
@@ -52,39 +56,39 @@
         <label for="email">Email:</label>
 
         <input type="email" id="email" name="email" required />
-      </fieldset>
 
-      <fieldset>
         <legend>Message Details</legend>
         <label for="title">Title:</label>
         <textarea id="title" name="title" rows="1" required></textarea>
         <br />
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-      </fieldset>
 
-      <button type="submit">Send</button>
+        <button type="submit" class="submit_button">Send</button>
     </form>
     <hr />
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.github.com/samrwitt" target="_blank"
-          ><img src="../images/github.jpg" alt="GitHub"
-        /></a>
-        <a href="https://t.me/Fumble_wit" target="_blank"
-          ><img src="../images/telegram.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-          target="_blank"
-          ><img src="../images/linkedin.png" alt="linkedin"
-        /></a>
-        <a href="mailto:samrawitkta@gmail.com" target="_blank"
-          ><img src="../images/Gmail_icon.png" alt="gmail"
-        /></a>
-      </div>
-      <p>Made by Samrwit.K</p>
-      <p>&copy; 2023 Your Website. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer__social-icons">
+                <a href="https://www.github.com/samrwitt" target="_blank"
+                    ><img src="/src/images/github.jpg" alt="GitHub"
+                /></a>
+                <a href="https://t.me/Fumble_wit" target="_blank"
+                    ><img src="/src/images/telegram.png" alt="Telegram"
+                /></a>
+                <a
+                    href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
+                    target="_blank"
+                    ><img src="/src/images/linkedin.png" alt="LinkedIn"
+                /></a>
+                <a href="mailto:samrawitkta@gmail.com" target="_blank"
+                    ><img src="/src/images/Gmail_icon.png" alt="Gmail"
+                /></a>
+            </div>
+            <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
+            <p class="footer-content__made-by">Made by Samrwit.K</p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
