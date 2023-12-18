@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects</title>
-    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="navbar__logo">
-            <a href="/src/index.html">
-                <img src="/src/images/logo.jpg" alt="My Logo" />
-            </a>
-        </div>
-        <div class="navbar__links">
-            <a href="/src/index.html">Home</a>
-            <a href="/src/About.html">About</a>
-            <a href="/src/Projects.html">Projects</a>
-            <a href="/src/Services.html">Services</a>
-            <a href="/src/Contact.html">Contact</a>
-        </div>
+      <div class="navbar__logo">
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="My Logo" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
     </nav>
 
     <main class="projects">
-        <h1 class="projects__title">Projects</h1>
-        <p class="projects__description">
-            These are few of the projects I have worked on in the past few years as
-            desinger and programmer. Take a look for yourself and see what kinda
-            work you should expect if you decide to work with me. <br />
-            Enjoy!
-        </p>
-        <div class="carousel">
-            <div class="carousel__slide">
-                <img src="/src/images/project1.jpg" alt="Image 1" />
-                <div class="carousel__slide-content">
-                    <h3 class="carousel__slide-title">Cloned instagram</h3>
-                    <p class="carousel__slide-description">
-                        This is a project where I cloned Instagram using React and Node.js.
-                    </p>
-                </div>
-            </div>
-            <div class="carousel__slide">
-                <img src="/src/images/project2.jpg" alt="Image 1" />
-                <div class="carousel__slide-content">
-                    <h3 class="carousel__slide-title">Logo competition</h3>
-                    <p class="carousel__slide-description">
-                        This is a project I competed in a logo set competition in Art challenge.
-                    </p>
-                </div>
-            </div>
-            <div class="carousel__slide">
-                <img src="/src/images/project3.png" alt="Image 1" />
-                <div class="carousel__slide-content">
-                    <h3 class="carousel__slide-title">Space invader game</h3>
-                    <p class="carousel__slide-description">
-                        This is a game I built using Java and Kotlin. You can find this in
-                        play store.
-                    </p>
-                </div>
-            </div>
+      <h1 class="projects__title">Projects</h1>
+      <p class="projects__description">
+        These are few of the projects I have worked on in the past few years as
+        desinger and programmer. Take a look for yourself and see what kinda
+        work you should expect if you decide to work with me. <br />
+        Enjoy!
+      </p>
+      <div class="carousel">
+        <div class="carousel__slide carousel__slide-selected">
+          <img src="images/project1.jpg" alt="Image 1" />
+          <div class="carousel__slide-content">
+            <h3 class="carousel__slide-title">Cloned instagram</h3>
+            <p class="carousel__slide-description">
+              This is a project where I cloned Instagram using React and
+              Node.js.
+            </p>
+          </div>
         </div>
-
-        <div class="controls">
-            <button class="controls__button" onclick="prevImage()">Previous</button>
-            <button class="controls__button" onclick="nextImage()">Next</button>
+        <div class="carousel__slide">
+          <img src="images/project2.jpg" alt="Image 2" />
+          <div class="carousel__slide-content">
+            <h3 class="carousel__slide-title">Logo competition</h3>
+            <p class="carousel__slide-description">
+              This is a project I competed in a logo set competition in Art
+              challenge.
+            </p>
+          </div>
         </div>
+        <div class="carousel__slide">
+          <img src="images/project3.png" alt="Image 3" />
+          <div class="carousel__slide-content">
+            <h3 class="carousel__slide-title">Space invader game</h3>
+            <p class="carousel__slide-description">
+              This is a game I built using Java and Kotlin. You can find this in
+              play store.
+            </p>
+          </div>
+        </div>
+    </div>
+         
     </main>
     <hr />
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer__social-icons">
-                <a href="https://www.github.com/samrwitt" target="_blank"
-                    ><img src="/src/images/github.jpg" alt="GitHub"
-                /></a>
-                <a href="https://t.me/Fumble_wit" target="_blank"
-                    ><img src="/src/images/telegram.png" alt="Telegram"
-                /></a>
-                <a
-                    href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
-                    target="_blank"
-                    ><img src="/src/images/linkedin.png" alt="LinkedIn"
-                /></a>
-                <a href="mailto:samrawitkta@gmail.com" target="_blank"
-                    ><img src="/src/images/Gmail_icon.png" alt="Gmail"
-                /></a>
-            </div>
-            <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
-            <p class="footer-content__made-by">Made by Samrwit.K</p>
+      <div class="footer-content">
+        <div class="footer__social-icons">
+          <a href="https://www.github.com/samrwitt" target="_blank"
+            ><img src="images/github.jpg" alt="GitHub"
+          /></a>
+          <a href="https://t.me/Fumble_wit" target="_blank"
+            ><img src="images/telegram.png" alt="Telegram"
+          /></a>
+          <a
+            href="https://et.linkedin.com/in/samrawit-tesfay-20a404283"
+            target="_blank"
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="mailto:samrawitkta@gmail.com" target="_blank"
+            ><img src="images/Gmail_icon.png" alt="Gmail"
+          /></a>
         </div>
+        <p class="footer-content__copyright">
+          &copy; 2023 Your Website. All rights reserved.
+        </p>
+        <p class="footer-content__made-by">Made by Samrwit.K</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

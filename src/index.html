@@ -5,29 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Samrawit</title>
-    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"> </script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar__logo">
-            <a href="/src/index.html">
-                <img src="/src/images/logo.jpg" alt="My Logo" />
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="My Logo" />
             </a>
         </div>
-        <div class="navbar__links">
-            <a href="/src/index.html">Home</a>
-            <a href="/src/About.html">About</a>
-            <a href="/src/Projects.html">Projects</a>
-            <a href="/src/Services.html">Services</a>
-            <a href="/src/Contact.html">Contact</a>
-        </div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar__links">
+           <li> <a href="index.html">Home</a></li>
+           <li>  <a href="About.html">About</a></li>
+           <li><a href="Projects.html">Projects</a></li>
+           <li><a href="Services.html">Services</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main id="home">
         <div class="hero-section">
             <div class="hero-section__image">
-                <img src="/src/images/AvatarMaker.png" alt="Description of the image" />
+                <img src="images/AvatarMaker.png" alt="Description of the image" />
             </div>
             <div class="hero-section__text">
                 <p class="hero-section__paragraph">
@@ -42,7 +47,7 @@
                     CSS, and JavaScript.
                 </p>
 
-                <a href="/src/projects.html" class="hero-section__button"> Let's tour </a>
+                <a href="projects.html" class="hero-section__button"> Let's tour </a>
             </div>
         </div>
     </main>
@@ -50,12 +55,12 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer__social-icons">
-                <a href="https://www.github.com/samrwitt" target="_blank"><img src="/src/images/github.jpg"
+                <a href="https://www.github.com/samrwitt" target="_blank"><img src="images/github.jpg"
                         alt="GitHub" /></a>
-                <a href="https://t.me/Fumble_wit" target="_blank"><img src="/src/images/telegram.png" alt="Telegram" /></a>
+                <a href="https://t.me/Fumble_wit" target="_blank"><img src="images/telegram.png" alt="Telegram" /></a>
                 <a href="https://et.linkedin.com/in/samrawit-tesfay-20a404283" target="_blank"><img
-                        src="/src/images/linkedin.png" alt="linkedin" /></a>
-                <a href="mailto:samrawitkta@gmail.com" target="_blank"><img src="/src/images/Gmail_icon.png"
+                        src="images/linkedin.png" alt="linkedin" /></a>
+                <a href="mailto:samrawitkta@gmail.com" target="_blank"><img src="images/Gmail_icon.png"
                         alt="gmail" /></a>
             </div>
             <p class="footer-content__copyright">&copy; 2023 Your Website. All rights reserved.</p>
