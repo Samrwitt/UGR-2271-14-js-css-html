@@ -1,10 +1,11 @@
 @media (max-width: 767px) {
-  .navbar, .social-icons aside, form {
+  .social-icons aside, form {
   flex-direction: column;
   align-items: center;
 }
 .navbar{
   justify-content: space-between;
+  flex-direction:row;
 }
 }
   * {
@@ -92,7 +93,7 @@
         margin:1rem;
       }
     }
-/* Add your existing navbar styles here */
+
 
 .hamburger {
 display: none;
@@ -114,7 +115,7 @@ transition: 0.4s;
 @media only screen and (max-width: 768px) {
 .navbar__links {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     position: absolute;
     background-color: #555;
@@ -140,9 +141,9 @@ transition: 0.4s;
 }
 .hamburger .bar {
   display: block;
-  height: 3px; /* Adjust the height of each bar */
-  width: 25px; /* Adjust the width of each bar */
-  background-color: black; /* Adjust the color of each bar */
+  height: 3px; 
+  width: 25px; 
+  background-color: black;
   margin: 5px 0;}
 
 .hamburger.show .bar:nth-child(1) {
@@ -179,7 +180,7 @@ transition: 0.4s;
 }
 
 #home {
-    padding: 20px; /* Add reasonable padding between the header and the content */
+    padding: 20px; 
 }
 
 .hero-section {
